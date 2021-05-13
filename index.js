@@ -109,6 +109,29 @@ mongoose.connect(connectstr,
         }
     });
 
+    app.delete("/user/:searchby/:searchval", async (req, resp) => {
+        try {
+            var searchobject;
+            var regex = new RegExp(["^", req.params.searchval, "$"].join(""), "i");
+            // console.log(regex);
+            switch (req.params.searchby) {
+                case "name":
+                    searchobject = {name: regex};
+                    break;
+                case "email":
+                    searchobject = {email: regex};
+                    break;                
+                case "country":
+                    searchobject = {country: regex};
+                    break;
+            }
+            var user = await User.deleteOne(searchobject);
+            resp.status(200).json({message: "Request Successful", data: user});
+        } catch (error) {
+            resp.status(500).status(500).json({message: error.message});
+        }
+    });
+
 
     // app.get("*", (req, res) => {
     //     res.status(404).json({message: "Invalid Request"});
