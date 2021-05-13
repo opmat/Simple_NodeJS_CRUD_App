@@ -27,10 +27,10 @@ Deploying Node.js Apps on Heroku | Heroku Dev Center
 
 
 ## Prerequisite
-This uses NodeJS default modules like *express*, *dotenv*, *mongodb*, *mongoose* and *validator*.
+This uses NodeJS modules like *express*, *dotenv*, *mongodb*, *mongoose* and *validator*.
 
 ## Getting Started
-To deployed this application, you are required to do the following;
+To deployed this application on a local system, you are required to do the following;
 1. Create a MongoDB database
 2. Create a login credential to the database and have it handy
 3. Clone this repository
@@ -57,7 +57,7 @@ or if you are on a development system run
 
 ```
 
-Then you can access the app through **http://localhost:3333** or **http://127.0.0.1:3333**
+Then you can access the app through **http://localhost:3333** or **http://127.0.0.1:3333** if cloned to your local system. To try out the API online, you can check out the demo section as the demo is available via **https://zuritask3-crud.herokuapp.com**.
 
 ## API Documentation
 The documentation for the API can be accessed via **https://documenter.getpostman.com/view/8385365/TzRVdR1z** to better understand how to use the API.
