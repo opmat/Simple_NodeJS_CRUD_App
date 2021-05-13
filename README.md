@@ -30,7 +30,13 @@ Deploying Node.js Apps on Heroku | Heroku Dev Center
 This uses NodeJS default modules like *express*, *dotenv*, *mongodb*, *mongoose* and *validator*.
 
 ## Getting Started
-The documentation for the API can be accessed via **https://documenter.getpostman.com/view/8385365/TzRVdR1z** to better understand how to use the API.
+To deployed this application, you are required to do the following;
+1. Create a MongoDB database
+2. Create a login credential to the database and have it handy
+3. Clone this repository
+4. Rename the *.env-sample* file to *.env*
+5. Update the .env file content with your database credentials.
+6. Run the nodejs application using anyone the commands below
 
 This app runs on port 3333 on localhost. To run the app, simply run the following command on your terminal from within the app directory path;
 
@@ -44,4 +50,16 @@ or if you wish to run the app from another directory, you will need to specify t
    node *path to index.js file*/index.js
    
 ```
+or if you are on a development system run
+
+```
+   npm run dev
+
+```
+
 Then you can access the app through **http://localhost:3333** or **http://127.0.0.1:3333**
+
+## API Documentation
+The documentation for the API can be accessed via **https://documenter.getpostman.com/view/8385365/TzRVdR1z** to better understand how to use the API.
+
+
