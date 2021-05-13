@@ -63,5 +63,5 @@ Then you can access the app through **http://localhost:3333** or **http://127.0.
 The documentation for the API can be accessed via **https://documenter.getpostman.com/view/8385365/TzRVdR1z** to better understand how to use the API.
 
 ## DEMO
-A demo of this application has been deployed to Heroku and accessible via **https://zuritask3-crud.herokuapp.com/** and the URL (**https://zuritask3-crud.herokuapp.com/**) serves as the endpoint URL for testing purpose. Check the API Documentation to test the application online.
+A demo of this application has been deployed to Heroku and accessible via **https://zuritask3-crud.herokuapp.com** and the URL (**https://zuritask3-crud.herokuapp.com**) serves as the endpoint URL for testing purpose. Check the API Documentation to test the application online.
 

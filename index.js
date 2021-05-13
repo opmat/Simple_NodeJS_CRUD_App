@@ -126,7 +126,7 @@ mongoose.connect(connectstr,
 })
 
 
-
-app.listen(3333, function() {
+var port = process.env.PORT || 3333;
+app.listen(port, function() {
     console.log('listening on 3333');
   });
